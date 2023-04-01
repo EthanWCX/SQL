@@ -1,0 +1,15 @@
+-- Create a grocery store database
+
+CREATE TABLE coffee(id INTEGER PRIMARY KEY, flavor TEXT, price INTEGER);
+INSERT into coffee VALUES(1, "Vanila", 5.00);
+INSERT into coffee VALUES(2,"Caramel",6.00);
+INSERT into coffee VALUES (3, "Chocolate", 7.00);
+INSERT into coffee VALUES(4, "Yo momma", 1000);
+
+--display the database order by price
+
+SELECT * FROM coffee ORDER BY price;
+
+-- how many coffee drinks are over 6?
+
+SELECT * FROM coffee WHERE price > 5 ORDER BY price
